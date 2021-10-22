@@ -5,8 +5,6 @@
 	--dark: #373737;
 	--gray: #999999;
 	--lightGray: #e0e0e0;
-	--orange: #f16821;
-	--darkish: #777;
 }
 html {
 	scroll-behavior: smooth;
@@ -14,9 +12,6 @@ html {
 	-webkit-scroll-behavior: smooth;
 }
 @media (max-width: 560px) {
-	.content-caption p {
-		right: 10%;
-	}
 }
 .mb-1 {
 	margin-bottom: 1rem;
