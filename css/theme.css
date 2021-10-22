@@ -17,10 +17,6 @@ html {
 	.content-caption p {
 		right: 10%;
 	}
-	.mx-10 {
-		margin-left: 0;
-		margin-right: 0;
-	}
 }
 .mb-1 {
 	margin-bottom: 1rem;
@@ -310,7 +306,6 @@ html {
 }
 i:hover {
 	color: var(--dark);
-	text-decoration: none;
 }
 a:hover,
 a:focus {
