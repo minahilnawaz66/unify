@@ -327,8 +327,8 @@ a:focus {
 .form-check::after,
 .clearfix::after {
 	content: "";
-	width: 100%;
 	display: table;
+	width: 100%;
 }
 .br-50 {
 	border: radius 50%;
@@ -340,13 +340,16 @@ a:focus {
 /* side2 */
 .img {
 	min-height: 100vh;
-	width: 100%;
 	object-fit: cover;
+	width: 100%;
 }
 .content-caption {
-	top: 60%;
-	left: 30%;
+	left: 50%;
 	position: absolute;
+	top: 70%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 .content-part {
 	position: relative;
