@@ -319,6 +319,9 @@ a:focus {
 .btn {
 	border-radius: 20px;
 }
+.login-heading h1 {
+	font-weight: 700;
+}
 .form-check::after,
 .clearfix::after {
 	content: "";
