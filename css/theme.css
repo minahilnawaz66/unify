@@ -351,6 +351,9 @@ a:focus {
 	object-fit: cover;
 	width: 100%;
 }
+.content-caption h1 {
+	font-size: 34px;
+}
 .content-caption {
 	left: 50%;
 	position: absolute;
