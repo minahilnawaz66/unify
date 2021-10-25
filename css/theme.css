@@ -2,7 +2,7 @@
 	--white: #ffffff;
 	--light: #f3f3f3;
 	--black: #000000;
-	--dark: #373737;
+
 	--gray: #999999;
 	--lightGray: #e0e0e0;
 }
@@ -11,7 +11,15 @@ html {
 	-ms-scroll-behavior: smooth;
 	-webkit-scroll-behavior: smooth;
 }
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media (max-width: 560px) {
+	.login-heading h1,
+	.login span,
+	.login span i {
+		font-size: 22px;
+	}
 }
 .mb-1 {
 	margin-bottom: 1rem;
@@ -302,6 +310,9 @@ html {
 i:hover {
 	color: var(--dark);
 }
+a {
+	color: #5bc0de;
+}
 a:hover,
 a:focus {
 	text-decoration: none !important;
@@ -320,7 +331,7 @@ a:focus {
 	border-radius: 20px;
 }
 .login-heading h1 {
-	font-weight: 700;
+	font-weight: 600;
 }
 .form-check::after,
 .clearfix::after {
