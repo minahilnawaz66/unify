@@ -715,6 +715,9 @@ i:hover {
 .g-top-100 {
 	top: 7.14286 rem;
 }
+.g-bottom-100 {
+	top: 7.14286 rem;
+}
 .g-pos-abs {
 	position: absolute !important;
 }
@@ -754,4 +757,19 @@ i:hover {
 }
 .rounded-circle {
 	border-radius: 50% !important;
+}
+#date-countdown .label {
+	font-size: 40px;
+	color: var(--black);
+	display: block;
+	font-weight: 500;
+}
+
+.countdown-block {
+	padding: 20px 0px;
+	margin: 10px;
+	display: inline-block;
+	border-radius: 7px;
+	color: var(--gray);
+	text-align: center;
 }
