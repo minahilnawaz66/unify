@@ -582,6 +582,9 @@ i:hover {
 		padding: 10px 0;
 	}
 }
+.input-group {
+	width: 70%;
+}
 @media screen and (max-width: 763px) {
 	.carousel-inner h1 {
 		font-weight: 400;
