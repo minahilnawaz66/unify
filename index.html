@@ -4,65 +4,317 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />	
-		<link rel="stylesheet" href="css/theme.css" />
-		<title>Login Page</title>
+		<!-- via node package -->
+		<link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
+		<link rel="stylesheet" href="lib/fontawesome-free/css/all.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Home</title>
 	</head>
 	<body>
-		<div class="container-fluid login">
-			<div class="row">
-				<div class="col-sm-5 col-md-6 col-lg-5 py-5">
-					<!-- aside-header -->
-					<div class="clearfix px-3">
-						<span><i class="fa fa-arrow-left fa-2x text-dark"></i></span>
-						<span class="pull-right fa-2x text-dark">Register</span>
-					</div>
-					<!-- aside-body-->
-					<div class="mx-10">
-						<div class="login-heading">
-							<h1>Login</h1>
-							<p class="text-gray">Welcome! Please fill username and password to sign in into your account</p>
-						</div>
-						<!-- form -->
-						<form class="py-5">
-							<div class="form-group">
-								<input type="email" class="form-control bg-light" id="" placeholder="Type your email" />
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control bg-light" id="" placeholder="Type your Password" />
-							</div>
-							<div class="form-check">
-								<label class="forgot-password pull-right py-1"><a href="#">Forgot your Password?<a></label>
-							</div>
-							<button type="submit" class="btn btn-lg btn-block btn-info">Login Now</button>
-						</form>
-						<!--aside-footer -->
-						<div class="social-media-links mb-1">
-							<div class="bar my-5"></div>
-								<div class="text-center text-black ">
-									<p class="text-bold">You can also login with:</p>
+			<!--Min Header -->
+		<nav class="navbar navbar-default bar rounded-0 bg-black my-0">
+			<div class="container py-3"  >
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<ul class="social-media d-lg-block list-inline">
+						<li>
+							<a href="#" class=""><i class="fab fa-facebook text-light"></i></a>
+						</li>
+						<li>
+							<a href="#" class=""><i class="fab fa-twitter text-light"></i></a>
+						</li>
+						<li>
+							<a href="#" class=""><i class="fab fa-tumblr text-light"></i></a>
+						</li>
+						<li>
+							<a href="#" class=""><i class="fab fa-pinterest text-light"></i></a>
+						</li>
+						<li>
+							<a href="#" class=""><i class="fab fa-google text-light"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNav">
+					<ul class="mb-0 pull-right list-inline">
+						<li>
+							<span class="text-light"><i class="pr-5 px-1 fa-1x fa fa-mobile text-light"></i>8 800 1234 4321</span>
+						</li>
+						<li>
+							<span class="text-light ml-2"><i class="px-1 fa-1x fa fa-euro-sign text-light"></i>Euro |</span>
+						</li>
+						<li>
+							<span class="text-light ml-2"><span class="pr-5 flag-icon flag-icon-gb"></span>English</span>
+						</li>
+						<li>
+							<span class="text-light ml-2 pl-8">Our Stores |</span>
+						</li>
+						<li>
+							<span class="text-light ml-2">Help |</span>
+						</li>
+						<li>
+							<span class="text-light ml-2">Account</span>
+						</li>
+						<li>
+							<span class="text-light ml-2"><i class="pr-5 fa fa-shopping-bag"></i></span>
+						</li>
+						<li>
+							<span class="text-light ml-2"><span class=" fa fa-search"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Main Navbar -->
+		<nav class="navbar navbar-default border-none bg-white my-0" >
+			<div class="container  ">
+				<div class="navbar-header">
+						<h1 class="my-0 py-0 font-mulish"> U N I F Y </h1>
+						<h6 class="py-0 my-0 font-mulish font-weight-bold text-center mb-2"><small class="vl mx-1"></small>SINCE 1928<small class="vl mx-1"></small></h6>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNav">
+					<ul class="nav navbar-nav navbar-right ">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#home-section" class=" px-3">HOME</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#pages-section" class="px-3">PAGES</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORIES<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#categories-section" class="px-3">CATEGORIES</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">WATCH<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#watch-section" class="px-3">WATCH</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CATALOGUE<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#catalogue-section" class="px-3">CATALOGUE</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">NEW ARRIVAL<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#newarrival-section" class="px-3">NEW ARRIVAL</a></li>
+							</ul>
+						  </li>
+						  <li class="link">
+							<a href="#">MAIN</a>
+						  </li>
+					</ul>
+				</div>	
+			</div>
+		</nav>
+		<!-- Site Caroursel -->
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="img-responsive" src="images/shopping2.jpg" alt="Slide Image"   />
+					<div class="carousel-caption b-30 overlay  ">	
+						<div class="row py-5 mx-10">
+							<div class=" mx-5 py-10 col-md-12 text-center m-py-10 carousel-caption-responsive">
+								<h1 class="text-white font-weight-900">Summer Collection</h1>
+								<p class="mb-5 lead text-white">
+									Special Offer: Free
+								</p>
+								<div>
+									<a href="#" class="btn btn-white btn-outline-white py-3 px-5 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a>
+									<span class="px-1 italic">Or</span>
+									<a href="#" class="btn btn-white btn-outline-white py-3 px-5 mb-lg-0 mb-2 d-block d-sm-inline-block">Contact</a>
 								</div>
-								<div class="social-media text-center">
-									<i class="fa-2x fab mx-1 fa-facebook "></i>
-									<i class="fa-2x fab mx-1 fa-google "></i>
-									<i class="fa-2x fab mx-1 fa-twitter "></i>
-								</div>
-						</div>
+							</div>
+						</div>				
 					</div>
 				</div>
-				<!-- content-part -->
-				<div class="content col-sm-7 col-md-6 col-lg-7 mx-0 px-0">
-					<div class="content-part">
-						<img src="images/bg-masthead.jpg" alt="Image" class="img" />
-						<div class="content-caption">
-							<h1 class="text-white">-Start Your Journey Now</h1>
-							<p class="lead text-white">Start create your amazing website with us! Login into your account now</p>
-						</div>
+				<div class="item">
+					<img  class="img-responsive" src="images/shopping3.jpeg" alt="Slide Image"  />
+					<div class="carousel-caption b-30 overlay">	
+						<div class="row py-5 mx-10">
+							<div class="mx-5 py-10 col-md-12 text-center carousel-caption-responsive">
+								<h1 class="text-white font-weight-900">Summer Collection</h1>
+								<p class="mb-5 lead text-white">
+									Special Offer: Free
+								</p>
+								<div>
+									<a href="#" class="btn btn-white btn-outline-white py-3 px-5 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a>
+									<span class="px-1 italic">Or</span>
+									<a href="#" class="btn btn-white btn-outline-white py-3 px-5 mb-lg-0 mb-2 d-block d-sm-inline-block">Contact</a>
+								</div>
+							</div>
+						</div>				
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- footer -->
+		<footer class="site-footer bg-black pt-10">
+			<div class="container  ">
+				<div class="row py-5 ">
+				<div class="col-md-12">
+					<div class="row ">
+						<div class="col-md-6 px-0 ">
+							<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Products</h2>
+							<div class="font-mulish col-md-2 px-0 d-sm-inline-block">
+								<div class="mb-3" >
+									<a href="#" class="text-gray py-5 ">Smart Phone</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Laptop</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Mouse</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Monitor</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Watch</a>
+								</div>
+							</div>
+							<div class="font-mulish col-md-2 d-sm-inline-block">
+								<div class="mb-3" >
+									<a href="#" class="text-gray py-5 ">Tablet</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Acessories</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">MousePad</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Handset</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Phablet</a>
+								</div>
+							</div>
+							<div class="font-mulish col-md-2 d-sm-inline-block">
+								<div class="mb-3" >
+									<a href="#" class="text-gray py-5 ">Speakers</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Camera</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Playstation</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="text-gray py-5">Xbox</a>
+								</div>
+							</div>
+						</div>
+					<div class="col-md-4 px-0">
+						<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Brands</h2>
+					<div class="font-mulish col-md-2 px-0 d-sm-inline-block">
+						<div class="mb-3 " >
+							<a href="#" class="text-gray py-5 ">Logitech</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Samsung</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Microsoft</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Apple</a>
+						</div>
+					</div>
+					<div class="font-mulish col-md-2 d-sm-inline-block">
+						<div class="mb-3" >
+							<a href="#" class="text-gray py-5 ">Huawei</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Motorola</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Sony</a>
+						</div>
+						<div class="mb-3">
+							<a href="#" class="text-gray py-5">Nokia</a>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-2 px-0 text-darkish contact">
+							<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Contact</h2>
+							<p><i class="fas fa-map-marker-alt px-1"></i> Unit 25, suite 3, 925 prospect PI Newyork Avenue</p>
+							<p><i class="fas fa-envelope px-2"></i>fusion@support.com</p>
+							<p><i class="fas fa-phone px-2"></i> +32 333 444 555</p>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div class="row py-5 ">
+					<div class="col-md-12">
+						<div class="row ">
+							<div class="col-md-6 px-0 ">
+								<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Subscribe</h2>
+								<div class="form-group mr-2">
+									<label class="sr-only" for="exampleInputAmount">Email</label>
+									<div class="input-group">
+										<input type="text" class="rounded-0 bg-darkish form-control" id="exampleInputAmount" placeholder="Enter your email" />
+										<div class="rounded-0 btn-success input-group-addon"><i class="fas fa-angle-right px-1 text-white"></i></div>
+									</div>
+								</div>	
+							</div>
+						<div class="col-md-4 px-0">
+							<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Language / Currency</h2>
+							<ul class="mb-0 list-inline">
+								<li>
+									<span class="text-light ml-2 font-mulish "><span class="pr-5 flag-icon flag-icon-gb"></span>English<i class="fa fa-angle-up px-1"></i></span>
+								</li>
+								<li>
+									<span class="text-light ml-2 font-mulish"><i class="px-1 fa-1x fa fa-euro-sign text-light"></i>Euro<i class="fa fa-angle-up px-1"></i> </span>
+								</li>
+							</ul>
+						</div>
+							<div class="col-md-2 px-0 text-light follow-us-on">
+								<h2 class="footer-heading mb-4 font-weight-900 font-size-2 text-uppercase font-mulish text-white">Follow Us On</h2>
+								<a href="#" class=""><i class="pr-3 fab fa-facebook text-darkish"></i></a>
+								<a href="#" class=""><i class="px-3 fab fa-twitter text-darkish"></i></a>
+								<a href="#" class=""><i class="px-3 fab fa-instagram text-darkish"></i></a>
+								<a href="#" class=""><i class="px-3 fab fa-linkedin text-darkish"></i></a>
+								<a href="#" class=""><i class="px-3 fab fa-google text-darkish"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="footer-bar"></div>
+				<!-- Copyright text -->
+			<div class="row py-3  mt-5 text-center">
+				<div class="col-md-12">
+					<div class=" py-5">
+						<p class="text-darkish font-mulish">
+							2018 &copy; Fusion.  All rights reserved
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</body>
 </html>
