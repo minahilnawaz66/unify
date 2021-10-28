@@ -562,7 +562,7 @@ i:hover {
 }
 
 .carousel-inner .item .img-responsive {
-	max-height: calc(100vh - 110px);
+	max-height: calc(100vh - 109.4px);
 	width: 100%;
 }
 @media screen and (max-width: 560px) {
