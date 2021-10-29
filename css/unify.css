@@ -36,6 +36,9 @@ h1 {
 	font-weight: 700;
 	color: var(--black);
 }
+i {
+	font-style: normal !important;
+}
 .border-none {
 	border: none;
 }
@@ -1698,4 +1701,7 @@ p {
 		transform: translateY(-50%) scale(0);
 		opacity: 0;
 	}
+}
+.font-size-20 {
+	font-size: 20px;
 }
