@@ -872,7 +872,7 @@ i:hover {
 	left: 0;
 	top: 0;
 	animation-name: example;
-	animation-duration: 4s;
+	animation-duration: 2s;
 	opacity: 1;
 }
 .cd-words-wrapper b.is-visible {
