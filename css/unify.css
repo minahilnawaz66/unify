@@ -1784,3 +1784,7 @@ a:hover {
 	display: block;
 	opacity: 1;
 }
+.left-t {
+	left: 45%;
+	position: absolute;
+}
