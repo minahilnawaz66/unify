@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/all.min.css" />
 		<link rel="stylesheet" href="css/unify.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" />
@@ -49,11 +51,12 @@
 		</nav>
 		<!-- Main Navbar -->
 		<nav class="navbar navbar-default border-none bg-white my-0 u-header py-4 sticky-top">
-			<div class="navbar-header animated animated-heading">
-				<img src="images/logo.jpg" alt="" />
+			<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<img src="images/logo.jpg" alt="" class="animated" />
 			</div>
-			<div class="">
-				<div class="collapse navbar-collapse ml-15" id="mainNav">
+			<div class="navbar-header animated-heading"></div>
+			<div class="containerr">
+				<div class="collapse navbar-collapse mx-10" id="mainNav">
 					<ul class="nav navbar-nav text-center">
 						<li class="dropdown mx- mx-15--xl">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <i class="ml-1 fa fa-angle-down"></i></a>
@@ -94,17 +97,6 @@
 						<li class="link">
 							<a href="#">MAIN</a>
 						</li>
-						<ul class="mb-0 list-inline pull-right animated animated-heading-right right-t py-3">
-							<li class="ml-2">
-								<span class="text-color text-color-black ml-1"><i class="fa-2x fa fa-shopping-bag"></i></span>
-							</li>
-							<li>
-								<span class="text-color text-color-black ml-1"><i class="fa-2x fa fa-search"></i></span>
-							</li>
-							<li>
-								<span class="text-color text-color-black ml-1"><i class="fa-2x fa fa-user"></i></span>
-							</li>
-						</ul>
 					</ul>
 				</div>
 			</div>
@@ -612,6 +604,7 @@
 					}
 				});
 			});
+			AOS.init();
 		</script>
 	</body>
 </html>

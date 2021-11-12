@@ -302,7 +302,10 @@ i {
 	margin-left: 7rem !important;
 }
 .ml-10 {
-	margin-left: 10rem !important;
+	margin-left: 20rem !important;
+}
+.ml-15 {
+	margin-left: 35rem !important;
 }
 .mt-0 {
 	margin-top: 0 !important;
@@ -1775,6 +1778,28 @@ a:hover {
 	animation-name: animated-heading;
 	animation-timing-function: ease-out;
 }
+@keyframes animated-heading-right {
+	0% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	80% {
+		transform: translateX(20%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-100%);
+		opacity: 1;
+	}
+}
+.animated-heading-right {
+	animation-name: animated-heading-right;
+	animation-timing-function: ease-out;
+}
 .animated {
 	animation-duration: 2.5s;
 	animation-fill-mode: both;
@@ -1786,5 +1811,9 @@ a:hover {
 }
 .left-t {
 	left: 45%;
+	position: absolute;
+}
+.right-t {
+	right: 0;
 	position: absolute;
 }
