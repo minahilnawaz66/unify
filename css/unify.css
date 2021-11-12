@@ -1791,6 +1791,7 @@ a:hover {
 .animated-heading {
 	animation-name: animated-heading;
 	animation-timing-function: ease-out;
+	margin-left: -130px;
 }
 @keyframes animated-heading-right {
 	0% {
@@ -1813,21 +1814,14 @@ a:hover {
 .animated-heading-right {
 	animation-name: animated-heading-right;
 	animation-timing-function: ease-out;
+	margin-right: -100px;
 }
 .animated {
-	animation-delay: 0.5s;
-	animation-duration: 2.5s;
+	animation-duration: 2s;
 	animation-fill-mode: both;
 	display: none;
 }
 .fixed .animated {
 	display: block;
 	opacity: 1;
-}
-
-.animation-left,
-.animation-right {
-	transition: all 1s ease-in-out;
-	transition-delay: 0.5s;
-	opacity: 0;
 }
