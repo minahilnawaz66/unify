@@ -1527,6 +1527,10 @@ textarea {
 .bg-google-plus-hover i:focus {
 	color: #ff1751;
 }
+.f-s {
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
 /* copyright */
 .pb-10 {
 	padding-bottom: 0.71429rem !important;
@@ -1748,6 +1752,16 @@ a:hover {
 	background-color: transparent;
 	border: 0;
 }
+
+.left-t {
+	left: 45%;
+	position: absolute;
+}
+.right-t {
+	right: 0;
+	position: absolute;
+}
+/* animation */
 .sticky-top {
 	position: -webkit-sticky;
 	position: sticky;
@@ -1801,6 +1815,7 @@ a:hover {
 	animation-timing-function: ease-out;
 }
 .animated {
+	animation-delay: 0.5s;
 	animation-duration: 2.5s;
 	animation-fill-mode: both;
 	display: none;
@@ -1809,11 +1824,10 @@ a:hover {
 	display: block;
 	opacity: 1;
 }
-.left-t {
-	left: 45%;
-	position: absolute;
-}
-.right-t {
-	right: 0;
-	position: absolute;
+
+.animation-left,
+.animation-right {
+	transition: all 1s ease-in-out;
+	transition-delay: 0.5s;
+	opacity: 0;
 }
