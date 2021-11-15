@@ -18,8 +18,58 @@
 		<title>Animated Header</title>
 	</head>
 	<body>
+		<div class="container-fluid">
+			<div id="header" class="flex-container justify-content-center navbar mb-0">
+				<div class="config flex-item-left clearfix">
+					<a> Help & Contact </a>
+				</div>
+
+				<div class="config flex-item-middle text-center">
+					<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
+				</div>
+				<div class="config flex-item-right text-right">
+					<div class="icons">
+						<i class="fa fa-search"></i>
+						<i class="fa fa-user"></i>
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+			<div class="flex-container navbar min-header justify-content-center">
+				<div id="animationLeft" class="animation-left flex-item-left logo">
+					<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
+				</div>
+				<ul class="nav text-center flex-item-middle navbar-nav">
+					<li class="active">
+						<a class="text-black text-uppercase" href="#">HOME</a>
+					</li>
+					<li>
+						<a class="text-black text-uppercase" href="#">PAGES</a>
+					</li>
+					<li>
+						<a class="text-black text-uppercase" href="#">CATEGORIES</a>
+					</li>
+					<li>
+						<a class="text-black text-uppercase" href="#">WATCH</a>
+					</li>
+					<li>
+						<a class="text-black text-uppercase" href="#">CATALOGUE</a>
+					</li>
+					<li>
+						<a class="text-black text-uppercase" href="#">NEW ARRIVAL</a>
+					</li>
+				</ul>
+				<div id="animationRight" class="animation-right flex-item-right logo text-right">
+					<div class="icons">
+						<i class="fa fa-search"></i>
+						<i class="fa fa-user"></i>
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--Min Header -->
-		<nav class="navbar navbar-default bar rounded-0 bg-white border-none my-0">
+		<!-- <nav class="navbar navbar-default bar rounded-0 bg-white border-none my-0">
 			<div class="py-4">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
@@ -49,10 +99,10 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav> -->
 		<!-- Main Navbar -->
-		<nav class="navbar navbar-default border-none bg-white my-0 u-header py-4 sticky-top overflow-hidden">
-			<div class="navbar-header animated animated-heading">
+		<!-- <nav class="navbar navbar-default border-none bg-white my-0 u-header py-4 sticky-top overflow-hidden">
+			<div id="animationLeft" class="navbar-header animated-left">
 				<img src="images/logo.jpg" alt="" />
 			</div>
 			<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
@@ -98,7 +148,7 @@
 						<li class="link">
 							<a href="#">MAIN</a>
 						</li>
-						<ul class="mb-0 list-inline pull-right animated animated-heading-right right-t py-3">
+						<ul id="animationRight" class="mb-0 list-inline pull-right animated-right right-t py-3">
 							<li class="ml-2">
 								<span class="text-color text-color-black ml-1"><i class="fa-2x fa fa-shopping-bag"></i></span>
 							</li>
@@ -112,7 +162,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav> -->
 		<!-- Site Caroursel -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
@@ -613,6 +663,10 @@
 						$("body").addClass("fixed");
 					} else {
 						$("body").removeClass("fixed");
+						$("#header").hide();
+						setTimeout(function () {
+							$("#header").show();
+						}, 1000);
 					}
 				});
 			});
