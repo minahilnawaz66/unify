@@ -1788,6 +1788,7 @@ a:hover {
 		opacity: 1;
 	}
 }
+
 .animated-heading {
 	animation-name: animated-heading;
 	animation-timing-function: ease-out;
@@ -1821,7 +1822,37 @@ a:hover {
 	animation-fill-mode: both;
 	display: none;
 }
+
 .fixed .animated {
 	display: block;
-	opacity: 1;
+}
+.overflow-hidden {
+	overflow: hidden !important;
+}
+.reverse .animated {
+	animation-direction: reverse;
+}
+@keyframes animated-heading-reverse {
+	0% {
+		transform: translateX(100%);
+		opacity: 1;
+	}
+	60% {
+		transform: translateX(-20%);
+		opacity: 1;
+	}
+	80% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+}
+
+.animated-heading-reverse {
+	animation-name: animated-heading-reverse;
+	animation-timing-function: ease-out;
+	margin-left: -130px;
 }
