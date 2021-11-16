@@ -1937,7 +1937,7 @@ a:hover {
 }
 @keyframes slide-down {
 	from {
-		top: -60px;
+		margin-top: -60px;
 	}
 	to {
 		top: 0px;
