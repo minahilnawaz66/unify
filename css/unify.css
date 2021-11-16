@@ -1826,7 +1826,15 @@ a:hover {
 .fixed .animated {
 	display: block;
 } */
-
+.active {
+	font-weight: 700;
+}
+.icons {
+	font-size: 18px;
+}
+.icons i {
+	margin: 0 10px;
+}
 .overflow-hidden {
 	overflow: hidden !important;
 }
@@ -1840,7 +1848,7 @@ a:hover {
 	left: 0;
 	right: 0;
 	z-index: 999;
-	transition: ease-in-out 2s;
+	transition: ease-in-out 1s;
 }
 
 .animation-left,
@@ -1858,13 +1866,10 @@ a:hover {
 }
 .fixed .navbar + .navbar {
 	display: flex;
-	-ms-flex-align: center;
 	align-items: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	max-width: 100vw;
+	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-left: 15px;
 }
 .fixed .navbar .animation-left,
 .fixed .navbar .animation-right {
@@ -1872,6 +1877,7 @@ a:hover {
 }
 .fixed .logo {
 	margin: 10px !important;
+	padding-right: 40px;
 }
 .fixed .navbar .d-none {
 	display: block !important;
@@ -1885,20 +1891,15 @@ a:hover {
 	padding-bottom: 20px !important;
 	line-height: 21px;
 }
-.fixed {
-}
+
 .navbar + .navbar {
 	padding: 10px 0 !important;
 	border-radius: none;
-	min-height: 30px;
+	height: 35px;
 	margin-bottom: 0;
 	border: none;
 }
 
-select {
-	border: 0;
-	border-radius: 0;
-}
 .navbar {
 	font-family: futura-pt, sans-serif;
 	padding: 20px 0;
@@ -1910,10 +1911,6 @@ select {
 	font-weight: 400;
 	font-size: 12.5px;
 	line-height: 21px;
-}
-
-.navbar .config a {
-	color: var(--black) !important;
 }
 
 .flex-container {
@@ -1938,12 +1935,17 @@ select {
 	padding-bottom: 10px !important;
 	line-height: 21px;
 }
-.active {
-	font-weight: 700;
+@keyframes slide-down {
+	from {
+		top: -60px;
+	}
+	to {
+		top: 0px;
+	}
 }
-.icons {
-	font-size: 18px;
-}
-.icons i {
-	margin: 0 10px;
+.slide-down {
+	animation-name: slide-down;
+	animation-timing-function: ease-out;
+	animation-duration: 1.2s;
+	opacity: 1;
 }

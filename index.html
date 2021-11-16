@@ -19,9 +19,9 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div id="header" class="flex-container justify-content-center navbar mb-0">
+			<div id="nav" class="flex-container justify-content-center navbar mb-0">
 				<div class="config flex-item-left clearfix">
-					<a> Help & Contact </a>
+					<a class="text-black"> Help & Contact </a>
 				</div>
 
 				<div class="config flex-item-middle text-center">
@@ -661,11 +661,13 @@
 				$(window).bind("scroll", function () {
 					if ($(window).scrollTop() > navpos.top) {
 						$("body").addClass("fixed");
+						$("#nav").removeClass("slide-down");
 					} else {
 						$("body").removeClass("fixed");
-						$("#header").hide();
+						$("#nav").addClass("slide-down");
+						$("#nav").hide();
 						setTimeout(function () {
-							$("#header").show();
+							$("#nav").show();
 						}, 1000);
 					}
 				});
