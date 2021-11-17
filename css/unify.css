@@ -1848,6 +1848,8 @@ a:hover {
 	left: 0;
 	right: 0;
 	z-index: 999;
+}
+.fixed .navbar + .navbar {
 	animation-name: slide-up;
 	animation-timing-function: ease-in-out;
 	animation-duration: 0.6s;
@@ -1863,7 +1865,7 @@ a:hover {
 .animation-left,
 .animation-right {
 	position: relative;
-	transition: all 0.6s ease 1.2s;
+	transition: all 0.6s linear 1.2s;
 	transition-delay: 0.5s;
 	overflow: hidden;
 }
@@ -1886,7 +1888,6 @@ a:hover {
 }
 .fixed .logo {
 	margin: 10px !important;
-	padding-right: 20px;
 }
 .fixed .navbar .d-none {
 	display: block !important;
@@ -1896,13 +1897,18 @@ a:hover {
 	position: absolute;
 }
 .fixed .navbar-nav > li > a {
-	padding-top: 20px !important;
-	padding-bottom: 20px !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 	line-height: 21px;
+}
+.fixed .navbar-nav {
+	margin-left: 6px;
+}
+.fixed .icons {
+	margin-right: 15px;
 }
 
 .navbar + .navbar {
-	padding: 10px 0 !important;
 	border-radius: none;
 	height: 35px;
 	margin-bottom: 0;
