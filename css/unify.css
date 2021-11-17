@@ -1848,9 +1848,18 @@ a:hover {
 	left: 0;
 	right: 0;
 	z-index: 999;
-	transition: ease-in-out 1s;
+	animation-name: slide-up;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.6s;
 }
-
+@keyframes slide-up {
+	from {
+		height: 132.467px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
 .animation-left,
 .animation-right {
 	position: relative;
@@ -1877,7 +1886,7 @@ a:hover {
 }
 .fixed .logo {
 	margin: 10px !important;
-	padding-right: 40px;
+	padding-right: 20px;
 }
 .fixed .navbar .d-none {
 	display: block !important;
@@ -1937,15 +1946,22 @@ a:hover {
 }
 @keyframes slide-down {
 	from {
-		margin-top: -60px;
+		margin-top: -100px;
 	}
 	to {
-		top: 0px;
+		margin-top: 0;
 	}
 }
 .slide-down {
 	animation-name: slide-down;
 	animation-timing-function: ease-out;
-	animation-duration: 1.2s;
-	opacity: 1;
+	animation-duration: 0.6s;
+}
+
+.menu-wrapper-nav {
+	position: absoulte;
+	height: 132.467px;
+}
+.container-fluid {
+	position: relative;
 }

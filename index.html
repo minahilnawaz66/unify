@@ -18,56 +18,58 @@
 		<title>Animated Header</title>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div id="nav" class="flex-container justify-content-center navbar mb-0">
-				<div class="config flex-item-left clearfix">
-					<a class="text-black"> Help & Contact </a>
-				</div>
+		<nav class="menu-wrapper-nav" role="navigation">
+			<div class="container-fluid">
+				<div id="nav" class="flex-container justify-content-center navbar mb-0">
+					<div class="config flex-item-left clearfix">
+						<a class="text-black"> Help & Contact </a>
+					</div>
 
-				<div class="config flex-item-middle text-center">
-					<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
+					<div class="config flex-item-middle text-center">
+						<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
+					</div>
+					<div class="config flex-item-right text-right">
+						<div class="icons">
+							<i class="fa fa-search"></i>
+							<i class="fa fa-user"></i>
+							<i class="fa fa-shopping-cart"></i>
+						</div>
+					</div>
 				</div>
-				<div class="config flex-item-right text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-shopping-cart"></i>
+				<div class="flex-container navbar min-header justify-content-center">
+					<div id="animationLeft" class="animation-left flex-item-left logo">
+						<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
+					</div>
+					<ul class="nav text-center flex-item-middle navbar-nav">
+						<li class="active">
+							<a class="text-black text-uppercase" href="#">HOME</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">PAGES</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">CATEGORIES</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">WATCH</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">CATALOGUE</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">NEW ARRIVAL</a>
+						</li>
+					</ul>
+					<div id="animationRight" class="animation-right flex-item-right logo text-right">
+						<div class="icons">
+							<i class="fa fa-search"></i>
+							<i class="fa fa-user"></i>
+							<i class="fa fa-shopping-cart"></i>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex-container navbar min-header justify-content-center">
-				<div id="animationLeft" class="animation-left flex-item-left logo">
-					<img class="" src="images/logo.jpg" alt="logo here" class="img-responsive" />
-				</div>
-				<ul class="nav text-center flex-item-middle navbar-nav">
-					<li class="active">
-						<a class="text-black text-uppercase" href="#">HOME</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">PAGES</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">CATEGORIES</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">WATCH</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">CATALOGUE</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">NEW ARRIVAL</a>
-					</li>
-				</ul>
-				<div id="animationRight" class="animation-right flex-item-right logo text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
-			</div>
-		</div>
+		</nav>
 		<!--Min Header -->
 		<!-- <nav class="navbar navbar-default bar rounded-0 bg-white border-none my-0">
 			<div class="py-4">
@@ -664,6 +666,7 @@
 						$("#nav").removeClass("slide-down");
 					} else {
 						$("body").removeClass("fixed");
+						$("#nav").removeClass("slide-up");
 						$("#nav").addClass("slide-down");
 						$("#nav").hide();
 						setTimeout(function () {
