@@ -1612,7 +1612,7 @@ p {
 .g-font-weight-400 {
 	font-weight: 400 !important;
 }
-.mx-15--xl {
+.mx-15 {
 	margin-left: 0.3rem !important;
 	margin-right: 0.3rem !important;
 }
@@ -1972,3 +1972,6 @@ a:hover {
 .container-fluid {
 	position: relative;
 }
+
+.img-responsive {
+	display: inline;
