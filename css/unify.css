@@ -1788,7 +1788,6 @@ a:hover {
 		opacity: 1;
 	}
 }
-
 .animated-heading {
 	animation-name: animated-heading;
 	animation-timing-function: ease-out;
@@ -1822,7 +1821,6 @@ a:hover {
 	animation-fill-mode: both;
 	display: none;
 }
-
 .fixed .animated {
 	display: block;
 } */
@@ -1903,6 +1901,9 @@ a:hover {
 }
 .fixed .navbar-nav {
 	margin-left: 6px;
+}
+.fixed {
+	box-shadow: 0 5px 10px -6px rgb(0 0 0 / 10%);
 }
 .fixed .icons {
 	margin-right: 15px;
